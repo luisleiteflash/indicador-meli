@@ -1,6 +1,6 @@
 /* gerado automaticamente a partir da planilha - nao editar a mao */
 window.MELI = {
-  atualizado: "10/09/2026 14:10",
+  atualizado: "10/09/2026 14:23",
   arquivo: "INDICADORES SEMANAIS E MENSAIS 1Q - AGOSTO (1) (1).xlsx",
   ano: 2026,
   rotas: {
@@ -18,7 +18,7 @@ window.MELI = {
     meses: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set"],
     mensal: [92.3, 93.1, 93.2, 93.6, 92.4, 91.7, 93, 93, 94],
     metaMensal: 92.9,
-    obs: []
+    obs: ["W34: Meta não foi atingida devido a quebras de 4 veículos"]
   },
   ontime: {
     semanas: ["W33", "W34", "W35", "W36"],

@@ -44,9 +44,14 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* O desenho deste painel foi feito em medidas fixas (1680 px de largura).
+     Em vez de refazer tudo, a pagina e ampliada por JS ate preencher a TV -
+     igual aos outros tres paineis, que ja se ajustam a qualquer tela.        */
+  html, body { height: 100%; }
+  body{ overflow: hidden; display: flex; align-items: center; justify-content: center; }
   .page{
-    max-width: 1680px;
-    margin: 0 auto;
+    width: 1680px;
+    flex: none;
     padding: 18px 24px 22px;
     display: flex;
     flex-direction: column;
@@ -633,13 +638,31 @@ window.__MELI_INIT = function () {
   }
 };
 
+/* ---- ajusta a pagina ao tamanho da TV (1080p, ultrawide, 4K) ---- */
+function ajustarEscala() {
+  var p = document.querySelector('.page');
+  if (!p) return;
+  p.style.zoom = 1;
+  var w = p.offsetWidth, h = p.offsetHeight;
+  if (!w || !h) return;
+  /* 1 px de folga: evita barra de rolagem por arredondamento */
+  var z = Math.min((window.innerWidth - 4) / w, (window.innerHeight - 4) / h);
+  if (isFinite(z) && z > 0) { p.style.zoom = z; }
+}
+
 /* carrega o dados.js gerado a partir da planilha e recarrega a cada 5 min */
 (function () {
   var local = location.protocol === 'file:';
   var s = document.createElement('script');
   s.src = local ? 'dados.js' : 'dados.js?v=' + Date.now();
-  s.onload = s.onerror = function () { window.__MELI_INIT(); };
+  s.onload = s.onerror = function () {
+    window.__MELI_INIT();
+    ajustarEscala();
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(ajustarEscala); }
+  };
   document.head.appendChild(s);
+  var t;
+  window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(ajustarEscala, 120); });
   setTimeout(function () { location.reload(); }, 5 * 60 * 1000);
 })();
 </script>

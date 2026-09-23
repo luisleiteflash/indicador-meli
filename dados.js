@@ -1,6 +1,6 @@
 /* gerado automaticamente a partir da planilha - nao editar a mao */
 window.MELI = {
-  atualizado: "23/09/2026 13:32",
+  atualizado: "23/09/2026 13:34",
   arquivo: "INDICADORES SEMANAIS E MENSAIS 1Q - AGOSTO (1) (1).xlsx",
   ano: 2026,
   rotas: {
@@ -30,7 +30,7 @@ window.MELI = {
     obs: ["Na W34, atrasos nas rotas de 2ª saída devido à demora na descarga nos CDs de Santo André e Zona Norte"]
   },
   plano: [
-    { "causa":"Pickup Sucess", "acao":"Ampliar a captacao de novos veiculos para garantir cobertura operacional em casos de imprevistos, quebras de veiculos e demandas adicionais, assegurando a continuidade das operacoes.", "prazo":"22/09/2026", "resp":"Betania Pessoa", "status":"Em andamento" },
+    { "causa":"Pickup Sucess", "acao":"Ampliar a captacao de novos veiculos para garantir cobertura operacional em casos de imprevistos, quebras de veiculos e demandas adicionais, assegurando a continuidade das operacoes.", "prazo":"30/09/2026", "resp":"Betania Pessoa", "status":"Em andamento" },
     { "causa":"Pickup Sucess", "acao":"Acompanhar todo o processo de captacao e integracao do driver, desde o primeiro contato ate sua completa habilitacao e aptidao para realizacao das rotas.", "prazo":"30/09/2026", "resp":"Betania Pessoa", "status":"Em andamento" },
     { "causa":"Pickup Sucess", "acao":"Manter uma base atualizada e centralizada com todos os contatos e informacoes dos drivers, garantindo agilidade na comunicacao, acionamento e escalacao na config", "prazo":"22/09/2026", "resp":"Betania Pessoa", "status":"Concluido" }
   ]

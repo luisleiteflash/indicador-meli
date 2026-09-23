@@ -1,6 +1,6 @@
 /* gerado automaticamente a partir da planilha - nao editar a mao */
 window.MELI = {
-  atualizado: "23/09/2026 13:34",
+  atualizado: "23/09/2026 16:00",
   arquivo: "INDICADORES SEMANAIS E MENSAIS 1Q - AGOSTO (1) (1).xlsx",
   ano: 2026,
   rotas: {

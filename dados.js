@@ -1,6 +1,6 @@
 /* gerado automaticamente a partir da planilha - nao editar a mao */
 window.MELI = {
-  atualizado: "23/09/2026 11:00",
+  atualizado: "23/09/2026 13:27",
   arquivo: "INDICADORES SEMANAIS E MENSAIS 1Q - AGOSTO (1) (1).xlsx",
   ano: 2026,
   rotas: {
@@ -30,7 +30,8 @@ window.MELI = {
     obs: ["Na W34, atrasos nas rotas de 2ª saída devido à demora na descarga nos CDs de Santo André e Zona Norte"]
   },
   plano: [
-    { "causa":"PU On Time", "acao":"Validar horários das rotas antes da atribuição e emplacamento dos veículos", "prazo":"25/08/2026", "resp":"Beatriz Veríssimo", "status":"Concluído" },
-    { "causa":"PU On Time", "acao":"Captar novos veículos para ajustar o pool de acordo com o scheduling", "prazo":"31/08/2026", "resp":"Betânia Pessoa", "status":"Concluído" }
+    { "causa":"Pickup Sucess", "acao":"Ampliar a capta��o de novos ve�culos para garantir cobertura operacional em casos de imprevistos, quebras de ve�culos e demandas adicionais, assegurando a continuidade das opera��es.", "prazo":"22/09/2026", "resp":"Bet�nia Pessoa", "status":"Em andamento" },
+    { "causa":"Pickup Sucess", "acao":"Acompanhar todo o processo de capta��o e integra��o do driver, desde o primeiro contato at� sua completa habilita��o e aptid�o para realiza��o das rotas.", "prazo":"30/09/2026", "resp":"Bet�nia Pessoa", "status":"Em andamento" },
+    { "causa":"Pickup Sucess", "acao":"Manter uma base atualizada e centralizada com todos os contatos e informa��es dos drivers, garantindo agilidade na comunica��o, acionamento e escala��o na config", "prazo":"22/09/2026", "resp":"Bet�nia Pessoa", "status":"Conclu�do" }
   ]
 };
